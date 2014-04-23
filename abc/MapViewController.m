@@ -40,7 +40,7 @@
     
     CLGeocoder * geocoder = [[CLGeocoder alloc]init];
     [geocoder geocodeAddressString:self.city completionHandler:^(NSArray *placemarks, NSError *error) {
-        NSLog(@"");
+       
         CLPlacemark * placeMark = [placemarks objectAtIndex:0];
       
         

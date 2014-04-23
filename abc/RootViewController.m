@@ -40,6 +40,20 @@
 }
 
 -(void)prepareData{
+    
+    NSString * path = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject];
+    NSString * plistPaht = [path stringByAppendingString:@"city.plist"];
+    NSString * locpath = [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES)lastObject];
+    NSString * locplistPaht = [locpath stringByAppendingString:@"loc.plist"];
+    self.myArray = [[NSMutableArray alloc]initWithContentsOfFile:plistPaht];
+    self.att = [[NSMutableArray alloc]initWithContentsOfFile:locplistPaht];
+    if ([self.myArray count] > 10) {
+        NSLog(@"有数据");
+        return ;
+    }
+    
+    NSLog(@"没有数据，需要网络请求");
+
     NSString * str = @"http://www.meituan.com/api/v1/divisions";
     NSURL * url = [NSURL URLWithString:str];
     NSURLRequest * request = [NSURLRequest requestWithURL:url];
@@ -70,12 +84,16 @@
         [arr addObject:[[[str children]objectAtIndex:3] stringValue]];
 
             [self.att addObject:arr];
-
+        
 
 
     }
    
-    
+ 
+    [self.myArray writeToFile:plistPaht atomically:YES];
+
+    [self.att writeToFile:locplistPaht atomically:YES];
+
 
     
     
