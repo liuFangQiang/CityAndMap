@@ -19,6 +19,12 @@
 		0FABCCE81907A183005353B7 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FABCCD01907A183005353B7 /* UIKit.framework */; };
 		0FABCCF01907A183005353B7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0FABCCEE1907A183005353B7 /* InfoPlist.strings */; };
 		0FABCCF21907A183005353B7 /* abcTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FABCCF11907A183005353B7 /* abcTests.m */; };
+		0FABCCFE1907A1CE005353B7 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FABCCFD1907A1CE005353B7 /* libxml2.dylib */; };
+		0FABCD011907A20E005353B7 /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FABCD001907A20E005353B7 /* GDataXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		0FABCD041907A314005353B7 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FABCD031907A314005353B7 /* RootViewController.m */; };
+		0FABCD071907ACC8005353B7 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FABCD061907ACC8005353B7 /* MapViewController.m */; };
+		0FABCD091907AE04005353B7 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FABCD081907AE04005353B7 /* CoreLocation.framework */; };
+		0FABCD0B1907AE0C005353B7 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FABCD0A1907AE0C005353B7 /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,15 @@
 		0FABCCED1907A183005353B7 /* abcTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "abcTests-Info.plist"; sourceTree = "<group>"; };
 		0FABCCEF1907A183005353B7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		0FABCCF11907A183005353B7 /* abcTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = abcTests.m; sourceTree = "<group>"; };
+		0FABCCFD1907A1CE005353B7 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		0FABCCFF1907A20E005353B7 /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		0FABCD001907A20E005353B7 /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		0FABCD021907A314005353B7 /* RootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
+		0FABCD031907A314005353B7 /* RootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		0FABCD051907ACC8005353B7 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		0FABCD061907ACC8005353B7 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		0FABCD081907AE04005353B7 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		0FABCD0A1907AE0C005353B7 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +70,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FABCD0B1907AE0C005353B7 /* MapKit.framework in Frameworks */,
+				0FABCD091907AE04005353B7 /* CoreLocation.framework in Frameworks */,
+				0FABCCFE1907A1CE005353B7 /* libxml2.dylib in Frameworks */,
 				0FABCCCF1907A183005353B7 /* CoreGraphics.framework in Frameworks */,
 				0FABCCD11907A183005353B7 /* UIKit.framework in Frameworks */,
 				0FABCCCD1907A183005353B7 /* Foundation.framework in Frameworks */,
@@ -96,6 +114,9 @@
 		0FABCCCB1907A183005353B7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0FABCD0A1907AE0C005353B7 /* MapKit.framework */,
+				0FABCD081907AE04005353B7 /* CoreLocation.framework */,
+				0FABCCFD1907A1CE005353B7 /* libxml2.dylib */,
 				0FABCCCC1907A183005353B7 /* Foundation.framework */,
 				0FABCCCE1907A183005353B7 /* CoreGraphics.framework */,
 				0FABCCD01907A183005353B7 /* UIKit.framework */,
@@ -109,6 +130,12 @@
 			children = (
 				0FABCCDB1907A183005353B7 /* AppDelegate.h */,
 				0FABCCDC1907A183005353B7 /* AppDelegate.m */,
+				0FABCD021907A314005353B7 /* RootViewController.h */,
+				0FABCD031907A314005353B7 /* RootViewController.m */,
+				0FABCD051907ACC8005353B7 /* MapViewController.h */,
+				0FABCD061907ACC8005353B7 /* MapViewController.m */,
+				0FABCCFF1907A20E005353B7 /* GDataXMLNode.h */,
+				0FABCD001907A20E005353B7 /* GDataXMLNode.m */,
 				0FABCCDE1907A183005353B7 /* Images.xcassets */,
 				0FABCCD31907A183005353B7 /* Supporting Files */,
 			);
@@ -241,6 +268,9 @@
 			files = (
 				0FABCCDD1907A183005353B7 /* AppDelegate.m in Sources */,
 				0FABCCD91907A183005353B7 /* main.m in Sources */,
+				0FABCD071907ACC8005353B7 /* MapViewController.m in Sources */,
+				0FABCD041907A314005353B7 /* RootViewController.m in Sources */,
+				0FABCD011907A20E005353B7 /* GDataXMLNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +391,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "abc/abc-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "abc/abc-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -374,7 +410,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "abc/abc-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					/usr/include/libxml2,
+				);
 				INFOPLIST_FILE = "abc/abc-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
